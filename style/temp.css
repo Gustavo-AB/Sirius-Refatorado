@@ -4,8 +4,9 @@
 }
 
 .button {
-    margin-top: 1rem;
+    cursor: pointer;
     border: none;
+    margin-top: 1rem;
     background-color: #00000000;
 }
 

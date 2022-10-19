@@ -82,53 +82,92 @@
       <div class="contato-layout">
         <div class="contato__dados">
           <ul class="contato__dados__lista">
-            <li class="contato__dados__lista__item contato__dados__lista__item-link">
-                <i class="contato__dados__lista__item-icon">
-                    <img src="./../assets/icons/social-icons/whatsapp.png" alt="Icone Whatsapp">
-                </i>
-                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511992810253" target="_blank">(11) 9 9281-0253</a>
+            <li
+              class="contato__dados__lista__item contato__dados__lista__item-link"
+            >
+              <i class="contato__dados__lista__item-icon">
+                <img
+                  src="./../assets/icons/social-icons/whatsapp.png"
+                  alt="Icone Whatsapp"
+                />
+              </i>
+              <a
+                href="https://api.whatsapp.com/send?1=pt_BR&phone=5511992810253"
+                target="_blank"
+                >(11) 9 9281-0253</a
+              >
             </li>
             <li class="contato__dados__lista__item">
-                <i class="contato__dados__lista__item-icon">
-                    <img src="./../assets/icons/social-icons/phone.png" alt="Icone Telefone">
-                </i>
-                <span>(11) 9 9281-0253</span>
+              <i class="contato__dados__lista__item-icon">
+                <img
+                  src="./../assets/icons/social-icons/phone.png"
+                  alt="Icone Telefone"
+                />
+              </i>
+              <span>(11) 9 9281-0253</span>
             </li>
             <li class="contato__dados__lista__item">
-                <i class="contato__dados__lista__item-icon">
-                    <img src="./../assets/icons/social-icons/phone.png" alt="Icone Telefone">
-                </i>
-                <span>(11) 3991-3923</span>
+              <i class="contato__dados__lista__item-icon">
+                <img
+                  src="./../assets/icons/social-icons/phone.png"
+                  alt="Icone Telefone"
+                />
+              </i>
+              <span>(11) 3991-3923</span>
             </li>
             <li class="contato__dados__lista__item">
-                <i class="contato__dados__lista__item-icon">
-                    <img src="./../assets/icons/social-icons/phone.png" alt="Icone Telefone">
-                </i>
-                <span>(11) 2361-8334</span>
+              <i class="contato__dados__lista__item-icon">
+                <img
+                  src="./../assets/icons/social-icons/phone.png"
+                  alt="Icone Telefone"
+                />
+              </i>
+              <span>(11) 2361-8334</span>
             </li>
-            <li class="contato__dados__lista__item contato__dados__lista__item-mini">
-                <span>Atendimento de segunda a sexta-feira das 08:00 às 18:00</span>
+            <li
+              class="contato__dados__lista__item contato__dados__lista__item-mini"
+            >
+              <span
+                >Atendimento de segunda a sexta-feira das 08:00 às 18:00</span
+              >
             </li>
             <li class="contato__dados__lista__divider"></li>
-            <li class="contato__dados__lista__item contato__dados__lista__item-link">
-                <i class="contato__dados__lista__item-icon">
-                    <img src="./../assets/icons/social-icons/mail.png" alt="Icone Email">
-                </i>
-                <a href="mailto:softclever@softclever.com.br">softclever@softclever.com.br</a>
+            <li
+              class="contato__dados__lista__item contato__dados__lista__item-link"
+            >
+              <i class="contato__dados__lista__item-icon">
+                <img
+                  src="./../assets/icons/social-icons/mail.png"
+                  alt="Icone Email"
+                />
+              </i>
+              <a href="mailto:softclever@softclever.com.br"
+                >softclever@softclever.com.br</a
+              >
             </li>
             <li class="contato__dados__lista__divider"></li>
-            <li class="contato__dados__lista__item contato__dados__lista__item-endereco">
-                <i class="contato__dados__lista__item-icon">
-                    <img src="./../assets/icons/social-icons/location.png" alt="Icone Localização">
-                </i>
-              <span>Rua João Alves Pimenta, 880 CEP 02967-000 – Freguesia do Ó São Paulo / SP</span>
+            <li
+              class="contato__dados__lista__item contato__dados__lista__item-endereco"
+            >
+              <i class="contato__dados__lista__item-icon">
+                <img
+                  src="./../assets/icons/social-icons/location.png"
+                  alt="Icone Localização"
+                />
+              </i>
+              <span
+                >Rua João Alves Pimenta, 880 CEP 02967-000 – Freguesia do Ó São
+                Paulo / SP</span
+              >
             </li>
           </ul>
         </div>
         <div class="contato__form">
           <h2>Entre em Contato</h2>
-          <form class="contato__form-layout">
+          <form class="contato__form-layout" action="javascript:sendEmail();">
             <input
+              data-form-input="nome"
+              required
               class="contato__form__input"
               type="text"
               placeholder="Nome"
@@ -136,6 +175,8 @@
               id="nome"
             />
             <input
+              data-form-input="companhia"
+              required
               class="contato__form__input"
               type="text"
               placeholder="Companhia"
@@ -143,13 +184,17 @@
               id="companhia"
             />
             <input
+              data-form-input="email"
+              required
               class="contato__form__input"
-              type="text"
+              type="email"
               placeholder="Email"
               name="email"
               id="email"
             />
             <input
+              data-form-input="telefone"
+              required
               class="contato__form__input"
               type="text"
               placeholder="Telefone"
@@ -157,6 +202,8 @@
               id="telefone"
             />
             <textarea
+              data-form-input="mensagem"
+              required
               id="mensagem"
               name="mensagem"
               placeholder="Mensagem"
