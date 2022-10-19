@@ -3,14 +3,14 @@
     --text-color-lighter: #B0B0B0;
 }
 
-.button{
+.button {
     margin-top: 1rem;
     border: none;
     background-color: #00000000;
 }
 
-.button > a {
-    
+.button>a {
+
     padding: .5rem 1.5rem;
     font-size: calc(var(--sub-title-size) - 16px);
     font-weight: 500;
@@ -21,7 +21,7 @@
     transition: 0.2s;
 }
 
-.button > a:hover {
+.button>a:hover {
     background-color: #00000000;
     color: var(--title-color);
 }
@@ -59,7 +59,7 @@ div.double-span {
 }
 
 .contato__dados__lista__item {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--text-color);
     margin-bottom: 1rem;
 
@@ -72,30 +72,25 @@ div.double-span {
     opacity: .75;
 }
 
-.contato__dados__lista__item-icon > img{
+.contato__dados__lista__item-icon>img {
     width: 1.5rem;
 }
 
 .contato__dados__lista__item-mini {
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
-.contato__dados__lista__item-link {
+.contato__dados__lista__item-link>a {
     color: var(--title-color);
     opacity: .75;
 }
 
-.contato__dados__lista__item-link > a {
-    color: var(--title-color);
-    opacity: .75;
-}
-
-.contato__dados__lista__item-link:hover {
+.contato__dados__lista__item-link>a:hover {
     opacity: 1;
 }
 
 .contato__dados__lista__item-endereco {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .contato__form-layout {
@@ -120,4 +115,32 @@ textarea.contato__form__input {
 
 .contato__form__input:focus {
     outline: 1px solid var(--text-color-light);
+}
+
+.contato__dados__lista__divider {
+    height: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .contato__form-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .double-span {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .contato__dados {
+        grid-row: 2;
+    }
+
+    .contato-layout {
+        padding: 0;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
