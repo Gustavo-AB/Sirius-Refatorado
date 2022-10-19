@@ -1,0 +1,92 @@
+.box-req {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+}
+
+.box-req .info-req{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+}
+
+.info-req .box-top, .box-down{
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-req h2{
+    font-size: 2rem;
+    color: #0D9DC4;
+}
+
+.info-req p{
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.info-req ul {
+    list-style-position: inside;
+}
+
+.info-req ol {
+    list-style-position: inside;
+}
+
+.info-req ol li{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.text-req {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.video-req {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 5rem;  
+}
+
+.video-req > h4{
+    font-size: 1.5rem;
+    color: #0095be;
+}
+
+@media screen and (max-width: 770px){
+    .text-req {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .video-req {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;  
+        padding-left: 0;  
+    }
+}
+.video {
+    width: 30rem;
+    height: 20rem;
+}
