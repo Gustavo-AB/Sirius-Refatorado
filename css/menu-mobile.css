@@ -1,0 +1,23 @@
+.menu-mobile {
+    width: 50vw;
+    height: 100vh;
+    background-color: #606060;
+    position: fixed;
+    left: 50%;
+    visibility: hidden;
+
+}
+
+.menu-mobile.activate {
+    width: 50vw;
+    height: 100vh;
+    background-color: #606060;
+    position: fixed;
+    left: 50%;
+    visibility: visible;
+}
+
+.menu-mobile img {
+    visibility: hidden;
+    width: 2px;
+}
