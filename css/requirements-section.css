@@ -1,0 +1,157 @@
+/* =================================================REQUIREMENTS================================================= */
+
+requirements-section{
+    width: 100%;
+    height: 100%;
+}
+
+#container-reqs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.requirements-box {
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.requirements-box .texts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .requirements-box .texts{
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 25px;
+    } 
+}
+
+@media screen and (max-width: 720px) {
+    .requirements-box .texts{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+/* =================================================TEXT-REQUIREMENTS================================================= */
+.requirements-box .text-req {
+    width: 100%;
+}
+
+.requirements-box .text-req h3 {
+    font-size: calc(var(--sub-title-size));
+    color: var(--title-color);
+}
+
+.requirements-box .text-req ul, ol{
+    margin-top: 25px;
+    list-style-position: inside;
+    color: var(--text-color);
+}
+
+.requirements-box .text-req ul, ol, li {
+    margin: 0.5rem 0;
+}
+/* =================================================VIDEO-REQUIREMENTS================================================= */
+.texts .video-req {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-req {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video-req h3{
+    font-size: calc(var(--sub-title-size));
+    color: var(--title-color);
+}
+
+.video-req p{
+    margin: 1rem 0;
+}
+
+.video-req .video {
+    width: 100%;
+    height: 20rem;
+    border-radius: 5px;
+    border: 1px solid #cacaca;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 900px) {
+.requirements-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.requirements-box .text-req, .video-req {
+    width: 100%;
+}
+}
+
+/* =================================================SOFT-NA-MIDIA================================================= */
+.soft-midia{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 5px 0;
+}
+
+.soft-midia .video-card {
+    width: 49%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.soft-midia .video-card h3{
+    font-size: var(--sub-title-size);
+    color: var(--title-color);
+}
+
+.soft-midia .video-card .video{
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .soft-midia{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .soft-midia .video-card {
+        width: 100%;
+    }  
+}
+/* =================================================POLITICA================================================= */
+#politica {
+    font-size: var(text-size);
+    color: var(--title-color);
+}
+
