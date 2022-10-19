@@ -1,0 +1,89 @@
+.box-propaganda {
+    background-color: dimgrey;
+    border-radius: 5px;
+
+    padding: 2rem;
+    
+    font-family: 'Roboto', 'Seguo UI', 'sans';
+    display: grid;
+    justify-items: center;
+}
+
+.left-box {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-right: 1em;
+    background-color: rgb(161, 191, 255);
+}
+
+.right-box {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    padding-left: 1em;
+    background-color:rgb(203, 162, 214);
+}
+
+.bottom-propaganda-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 35px;
+    background-color: brown;
+}
+
+.bottom-propaganda-box button {
+    justify-self: start;
+    background-color: aquamarine;
+    
+}
+
+.box-propaganda button{
+    margin-top: 4rem ;
+    width: auto;
+    border: none;
+    background-color: #8d1b1b00;
+}
+
+.box-propaganda button a{
+    padding: 2rem;
+    background-color: var(--title-color);
+    font-size: var(--text-size);
+    color: #f5f5f5;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.2s;
+    border: 3px solid #ffffff00;
+    align-self: center;
+}
+
+.box-propaganda button a:hover{
+    background-color: #8d1b1b00;
+    color: #0d0d0d;
+    border: 3px solid var(--title-color);
+}
+
+/* Esquerda */
+
+.left-box h2 {
+    text-align: center;
+    font-size: 2em;
+    font-style: bold;
+}
+
+
+
+.left-box p {
+    font-size: 1em;
+}
+
+.left-box img {
+    
+    padding: 3em;
+}
+
+/* Direita */
+
+.right-box h3 {
+    font-size: 1.5em;
+    font-style: bold;
+    color: rgb(38, 38, 39);
+}

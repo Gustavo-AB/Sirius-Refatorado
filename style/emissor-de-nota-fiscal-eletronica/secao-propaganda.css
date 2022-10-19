@@ -1,0 +1,115 @@
+.box-propaganda {
+    margin: 6%;
+    width: 88%;
+    display: grid;
+    grid-template-areas: 
+        'lef rig'
+        'leftben .'
+        'leftben bot';
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    border-radius: 5px;
+    line-height: 1.5em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+/* Left Collumn */
+
+.left-box{
+    text-align: left;
+    grid-area: lef;
+    align-items: center;
+}
+
+.left-box h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.left-box p {
+    padding-right: 0.9em;
+    width: 95%;
+}
+
+.left-box img {
+    margin: 1.5rem 0;
+    width: 30%;
+    height: auto;
+}
+/* Right Collumn */
+
+.right-box{
+    grid-area: rig;
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 0.9em;
+    color: #636363;
+}
+
+.right-box h3 {
+    font-size: 1.75em;
+    margin-bottom: 20px;
+    color:rgb(40, 40, 41)
+}
+
+/* Benefícios */
+
+.left-ben {
+    grid-area: leftben;
+    width: 100%;
+}
+
+.right-ben {
+    grid-area: rightben;
+    width: 100%;
+}
+
+/* Bottom */
+
+.box-propaganda a {
+    color:aliceblue;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.box-propaganda button {
+    grid-area: bot;
+    justify-self: left;
+    background-color: var(--title-color);
+    padding: 2em;
+    border-radius: 5px;
+    border:3px solid #ffffff00;
+    transition: 0.2s;
+}
+
+.box-propaganda button:hover {
+    background-color: #005972;
+ 
+}
+
+@media screen and (max-width: 650px) {
+    .box-propaganda {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+    }
+
+    .box-propaganda h2{
+        text-align: center;
+    }
+
+    .box-propaganda img{
+        width: 300px;
+    }
+
+    .box-propaganda button{
+        padding: 1rem;
+        max-width: 200px;
+    }
+}

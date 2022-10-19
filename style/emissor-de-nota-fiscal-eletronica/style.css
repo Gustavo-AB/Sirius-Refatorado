@@ -1,0 +1,19 @@
+.banner.b{
+    height: 200px;
+}
+
+.video-card-apr h3{
+    color: var(--title-color);
+}
+
+.texto-generico {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    color: var(--tex-color)
+}
+
+.texto-generico h3{
+    color: var(--title-color);
+}
