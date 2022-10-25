@@ -1,1 +1,13 @@
 Guilherme: fazendo teste de novo
+
+Quando for fazer desenvoler o body depois do menu https://youtu.be/_KglicHxv3g?t=473
+
+USAR ASIDE quando o contéudo não tem haver com o conteúdo original daquela página.
+Exemplo
+	Pagina principal
+		ASIDE contato
+		ASIDE curiosidade
+
+Para ARRUMAR o problema da lista do site: https://www.youtube.com/watch?v=pdomr7thueI&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=41&ab_channel=CursoemV%C3%ADdeo
+
+Responsividade em vídeos do Youtube e Vimeo https://www.youtube.com/watch?v=u9NE0jInb_c&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=42&ab_channel=CursoemV%C3%ADdeo

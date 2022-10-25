@@ -1,0 +1,80 @@
+@import url("https://use.typekit.net/ysh5cag.css");
+
+
+.effect-phrase-headline {
+    float: left;
+    position: relative;
+
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.effect-phrase-headline-content {
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    transform: translateY(-50%);
+
+    height: 50%;
+
+    font-size: 4vw;
+
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.effect-phrase-title {
+    height: 100%;
+
+}
+
+.effect-phrase-title-lines {
+    display: grid;
+    grid-template-areas:
+        'line-1'
+        'line-2'
+        'line-3';
+}
+
+.effect-phrase-title-lines>span {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 800px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.effect-phrase-title-line-1 {
+    grid-area: 'line-1';
+}
+
+.effect-phrase-title-line-2 {
+    grid-area: 'line-2';
+}
+
+.effect-phrase-title-line-3 {
+    grid-area: 'line-3';
+}
+
+.effect-phrase-headline-line {
+    background-color: #05AFF2;
+    position: absolute;
+    top: 66%;
+    left: 8%;
+
+    width: 50%;
+    height: 1vh;
+
+    border-radius: 0.5vh;
+}
+
+.effect-phrase-date {
+    position: absolute;
+    top: 75%;
+    left: 8%;
+
+    font-size: 2vw;
+
+    letter-spacing: 0.26px;
+}

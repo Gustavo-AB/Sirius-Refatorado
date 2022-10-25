@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const btnMenu = document.querySelector("button#menu-button");
 
 function toggleMenu() {
@@ -29,3 +30,5 @@ function sendEmail() {
 }
 
 btnMenu.addEventListener("click", toggleMenu);
+=======
+>>>>>>> GabrielToth-refatorar
