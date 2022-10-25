@@ -1,0 +1,188 @@
+header {
+    min-height: 30px;
+    max-height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        'logo menu';
+}
+
+.logo-menu {
+    grid-area: 'logo';
+    min-width: 30px;
+    max-width: 50px;
+    min-height: 30px;
+    max-height: 50px;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.menu-container {
+    grid-area: 'menu';
+    justify-self: end;
+    align-self: center;
+    margin-right: 5%;
+}
+
+.menu-links {
+    width: fit-content;
+    align-self: start;
+    margin: 0px;
+}
+
+.menu-redirect {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+    margin: 5px;
+}
+
+.menu-link-redirect {
+    color: var(--text-color);
+    transition-duration: .3s;
+}
+
+.menu-link-redirect:hover {
+    color: var(--menu-text-color);
+}
+
+.hamburger-menu {
+    display: none;
+    width: 40px;
+    height: 24px;
+}
+
+.menu-button {
+    background-color: transparent;
+    background-image: url('/assets/imgs/arrowUp.png');
+    background-size: contain;
+    width: 40px;
+    height: 24px;
+
+    border: 0px;
+    cursor: pointer;
+}
+
+
+@keyframes upArrow {
+    0% {
+        top: 1%;
+    }
+
+    100% {
+        top: 3%;
+    }
+}
+
+@keyframes upArrow-menu-open {
+    0% {
+        top: 57%;
+    }
+
+    100% {
+        top: 59%;
+    }
+}
+
+@media screen and (min-width: 791px) {
+    .menu {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    header {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        position: fixed;
+        top: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        animation-name: upArrow;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        margin: auto;
+
+        border-radius: 15px;
+        border: 0px
+    }
+
+    .hamburger-menu-open {
+        animation-name: upArrow-menu-open;
+    }
+
+    .menu {
+        width: 100%;
+        height: auto;
+        position: fixed;
+
+        display: none;
+        grid-template-areas:
+            'logo'
+            'menu';
+
+        margin: auto;
+        background-color: white;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25)
+    }
+
+    .logo-menu {
+        grid-area: 'logo';
+        min-width: 30px;
+        max-width: 50px;
+        min-height: 30px;
+        max-height: 50px;
+        padding: 10px 0px;
+    }
+
+    .menu-container {
+        grid-area: 'menu';
+        margin: 0;
+        width: 100%;
+    }
+
+    .menu-links {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu-redirect {
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .menu-redirect:nth-child(odd) {
+        background-color: rgba(4, 135, 217, 0.25)
+    }
+
+    .menu-link-redirect {
+        text-decoration: none;
+        padding: 5px;
+        font-weight: 300;
+        text-align: center;
+        align-self: center;
+    }
+}
+

@@ -1,0 +1,23 @@
+body #wp-button {
+    position: fixed;
+    border: none;
+    background-color: rgba(0, 149, 190, 0);
+    width: 20px;
+    top: 90%;
+    right: 5%;
+}
+
+body #wp-button a img{
+    width: 50px;
+}
+
+@media screen and (max-width: 650px) {
+    body #wp-button {
+        position: fixed;
+        border: none;
+        background-color: rgba(0, 149, 190, 0);
+        width: 20px;
+        top: 90%;
+        right: 3rem;
+    }
+}

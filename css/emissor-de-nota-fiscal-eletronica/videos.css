@@ -12,8 +12,31 @@
     flex-wrap: wrap;
     gap: 0;
     padding: 1rem;
+<<<<<<< HEAD
 }
 
 .box-videos-apr .video-card-apr.sm{
     height: 800px;
+=======
+<<<<<<<< HEAD:style/emissor-de-nota-fiscal-eletronica/videos.css
+}
+
+
+
+.soft-midia .videoyt.youtube {
+    width: 400px;
+}
+.box-videos-apr .video-card-apr.smp{
+    height: 500px;
+}
+
+@media screen and (max-width: 1440px){
+    .soft-midia .video-card .youtube{
+        width: 22rem;
+        height: 200px
+       
+    } 
+========
+>>>>>>>> 1629032b45093fff08a5c280fb3810a78f121c95:css/emissor-de-nota-fiscal-eletronica/videos.css
+>>>>>>> 1629032b45093fff08a5c280fb3810a78f121c95
 }
