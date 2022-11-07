@@ -102,10 +102,11 @@
 
     .box-propaganda h2{
         text-align: center;
+        line-height: 40px;
     }
 
     .box-propaganda img{
-        width: 300px;
+        width: 200px;
     }
 
     .box-propaganda button{
