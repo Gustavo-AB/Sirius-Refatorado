@@ -1,0 +1,14 @@
+.empresa {
+    margin: 0 2rem;
+}
+
+.empresa-text {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.empresa-text p{
+    width: 50%;
+}

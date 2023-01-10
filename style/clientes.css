@@ -1,0 +1,15 @@
+.clientes {
+    margin: 0 2rem;
+}
+
+.clientes .box-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.clientes h3{
+    text-align: center;
+}
+

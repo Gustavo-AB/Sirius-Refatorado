@@ -1,3 +1,5 @@
+const http = new XMLHttpRequest();
+
 const btnMenu = document.querySelector("button#menu-button");
 
 function toggleMenu() {
@@ -23,9 +25,33 @@ function sendEmail() {
 	Mensagem: ${mensagem}\n
 	`;
 
-  window.open(
-    `mailto:softclever@softclever.com.br?subject=${sub}&body=${body}`
-  );
+  
+
+  (async () => {
+    try{
+      const headers = {
+        "Content-Type":"application/json"
+      }
+    
+      const init = {
+        method: 'POST',
+        headers:headers,
+        body: JSON.stringify({
+          nome:nome,
+          email:email,
+          companhia:companhia,
+          telefone:telefone,
+          mensagem:"Sistema Sat Fiscal | "+mensagem
+        })
+      }
+      await fetch("https://www.api.emissorsatfiscal.net.br/send", init)
+      alert("Email enviado!")
+    } catch(err){
+      console.log("erro")
+    }
+    
+  })()
+   
 }
 
 btnMenu.addEventListener("click", toggleMenu);
