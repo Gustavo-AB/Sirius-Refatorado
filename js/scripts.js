@@ -25,33 +25,29 @@ function sendEmail() {
 	Mensagem: ${mensagem}\n
 	`;
 
-  
-
   (async () => {
-    try{
+    try {
       const headers = {
-        "Content-Type":"application/json"
-      }
-    
+        "Content-Type": "application/json",
+      };
+
       const init = {
-        method: 'POST',
-        headers:headers,
+        method: "POST",
+        headers: headers,
         body: JSON.stringify({
-          nome:nome,
-          email:email,
-          companhia:companhia,
-          telefone:telefone,
-          mensagem:"Sistema Sat Fiscal | "+mensagem
-        })
-      }
-      await fetch("https://www.api.emissorsatfiscal.net.br/send", init)
-      alert("Email enviado!")
-    } catch(err){
-      console.log("erro")
+          nome: nome,
+          email: email,
+          companhia: companhia,
+          telefone: telefone,
+          mensagem: "Sistema Sat Fiscal | " + mensagem,
+        }),
+      };
+      await fetch("https://www.api.emissorsatfiscal.net.br/send", init);
+      alert("Email enviado!");
+    } catch (err) {
+      console.log("erro");
     }
-    
-  })()
-   
+  })();
 }
 
 btnMenu.addEventListener("click", toggleMenu);

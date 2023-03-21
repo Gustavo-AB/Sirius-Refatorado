@@ -443,3 +443,22 @@ footer .links{
 .links .link p {
     color: #f5f5f5;
 }
+
+.box-propagandas {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box-propagandas .propaganda {
+    width: 30rem;
+}
+
+@media screen and (max-width: 350px) {
+    .box-propagandas .propaganda {
+        width: 15rem;
+    }
+}
