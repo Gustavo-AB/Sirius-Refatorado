@@ -42,7 +42,21 @@ function sendEmail() {
           mensagem: "Sistema Sat Fiscal | " + mensagem,
         }),
       };
-      await fetch("https://www.api.emissorsatfiscal.net.br/send", init);
+
+      const dbEmail = {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify({
+          nome: nome,
+          email: email,
+          telefone: telefone,
+          mensagem: "Sistema Sat Fiscal | " + mensagem,
+        })
+      }
+
+      // await fetch("https://www.api.emissorsatfiscal.net.br/send", init);
+      await fetch("https://api.emissorsatfiscal.net.br/email", dbEmail)
+
       alert("Email enviado!");
     } catch (err) {
       console.log("erro");
